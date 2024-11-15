@@ -3,7 +3,6 @@ Commit: https://github.com/arodasperez/paginawebldm/commit/fd6a54b6f7a60d08896b8
 
 Versión y Comentarios del Proyecto 
     - Reestructuración del código para añadir varias etiquetas  (Div,Header,Section,Aside,Footer) con su correspondiente ID 
-    
     - Empezar a añadir comentarios que me ayudaran más tarde
 
 Version V0.3:
