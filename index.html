@@ -469,16 +469,18 @@
                 <section>
                     <h2>Elemento &lt;audio&gt;</h2>
                     <audio controls>
-                        <source src="Aqui va la ruta del audio" type="audio/mpeg">
+                        <source src="src/contenido/audio/DB-Meme.mp3" type="audio/mpeg">
                         Tu navegador no soporta el elemento <code>audio</code>.
                     </audio>
                 </section>
 
                 <section>
                     <h2>Elemento &lt;video&gt; con &lt;track&gt;</h2>
-                    <video controls width="480">
-                        <source src="Aqui va la ruta del video" type="video/mp4">
-                        <track src="Aqui va la ruta del subtitulo" kind="subtitles" srclang="es" label="Español">
+                    <video controls width="480" height="480">
+                        <p>El video no tiene audio</p>
+                        <source src="src/contenido/video/videoplayback.mp4" type="video/mp4">
+                        <source src="src/contenido/audio/DB-Meme.mp3" type="audio/mpeg">
+                        <track src="src/contenido/subtitulo/noexiste.vtt" kind="subtitles" srclang="es" label="Español">
                         Tu navegador no soporta el elemento <code>video</code>.
                     </video>
                 </section>
