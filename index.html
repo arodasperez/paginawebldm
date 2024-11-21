@@ -343,112 +343,172 @@
                 <br><br>
 
                 <h1><p>Inicio de formulario</p></h1>
-                <form action="" method="post">
-                    <!-- Antonio Rodas Pérez: Campo de texto para el nombre con etiqueta -->
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
-                    <br><br>
-
-                    <!-- Antonio Rodas Pérez: Casillas de verificación (checkbox) -->
-                    <label for="intereses">Intereses:</label><br>
-                    <label><input type="checkbox" name="intereses" value="tecnologia"> Tecnología</label><br>
-                    <label><input type="checkbox" name="intereses" value="arte"> Arte</label><br>
-                    <label><input type="checkbox" name="intereses" value="deporte"> Deporte</label>
-                    <br><br>
-
-                    <!-- Antonio Rodas Pérez: Campo para selección de color -->
-                    <label for="color">Selecciona un color favorito:</label>
-                    <input type="color" id="color" name="color">
-                    <br><br>
-
-                    <!-- Antonio Rodas Pérez: Campo de fecha -->
-                    <label for="fecha">Fecha de nacimiento:</label>
-                    <input type="date" id="fecha" name="fecha">
-                    <br><br>
-
-                    <!-- Antonio Rodas Pérez: Campo de fecha y hora local -->
-                    <label for="fecha-hora">Fecha y hora del evento:</label>
-                    <input type="datetime-local" id="fecha-hora" name="fecha-hora">
-                    <br><br>
-
-                    <!-- Antonio Rodas Pérez: Campo de correo electrónico -->
-                    <label for="email">Correo electrónico:</label>
-                    <input type="email" id="email" name="email">
-                    <br><br>
-
-                    <!-- Antonio Rodas Pérez: Campo para subir archivos -->
-                    <label for="archivo">Subir un archivo:</label>
-                    <input type="file" id="archivo" name="archivo">
-                    <br><br>
-
-                    <!-- Antonio Rodas Pérez: Campo oculto -->
-                    <input type="hidden" name="usuarioID" value="12345">
-
-                    <!-- Antonio Rodas Pérez: Botón de imagen -->
-                    <label for="imagen">Botón de imagen:</label>
-                    <input type="image" src="https://via.placeholder.com/100" alt="Enviar imagen">
-                    <br><br>
-
-                    <!-- Antonio Rodas Pérez: Campo de mes -->
-                    <label for="mes">Selecciona un mes:</label>
-                    <input type="month" id="mes" name="mes">
-                    <br><br>
-
-                    <!-- Antonio Rodas Pérez: Campo numérico -->
-                    <label for="numero">Número favorito:</label>
-                    <input type="number" id="numero" name="numero" min="1" max="100">
-                    <br><br>
-
-                    <!-- Antonio Rodas Pérez: Campo de contraseña -->
-                    <label for="password">Contraseña:</label>
-                    <input type="password" id="password" name="password">
-                    <br><br>
-
-                    <!-- Antonio Rodas Pérez: Botones de opción (radio) -->
+                <form action="">
+                    <!-- Antonio Rodas Pérez: Agrupación de campos <fieldset>-->
                     <fieldset>
-                        <legend>Género:</legend>
-                        <label><input type="radio" name="genero" value="masculino" checked> Masculino</label>
-                        <label><input type="radio" name="genero" value="femenino"> Femenino</label>
+                        <legend>Información personal</legend>
+            
+                        <!-- Antonio Rodas Pérez: Text -->
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required maxlength="50"><br><br>
+            
+                        <!-- Antonio Rodas Pérez: Contraseña -->
+                        <label for="password">Contraseña:</label>
+                        <input type="password" id="password" name="password" required minlength="8"><br><br>
+            
+                        <!-- Antonio Rodas Pérez: Email -->
+                        <label for="email">Correo:</label>
+                        <input type="email" id="email" name="email"><br><br>
+            
+                        <!-- Antonio Rodas Pérez: Teléfono -->
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono"><br><br>
+            
+                        <!-- Antonio Rodas Pérez: Fecha -->
+                        <label for="fecha">Fecha de nacimiento:</label>
+                        <input type="date" id="fecha" name="fecha"><br><br>
+            
+                        <!-- Antonio Rodas Pérez: Fecha y hora local -->
+                        <label for="datetime">Fecha y hora:</label>
+                        <input type="datetime-local" id="datetime" name="datetime"><br><br>
+            
+                        <!-- Antonio Rodas Pérez: Mes -->
+                        <label for="mes">Mes:</label>
+                        <input type="month" id="mes" name="mes"><br><br>
+            
+                        <!-- Antonio Rodas Pérez: Semana -->
+                        <label for="semana">Semana:</label>
+                        <input type="week" id="semana" name="semana"><br><br>
+            
+                        <!-- Antonio Rodas Pérez: Hora -->
+                        <label for="hora">Hora:</label>
+                        <input type="time" id="hora" name="hora"><br><br>
+            
+                        <!-- Antonio Rodas Pérez: Número -->
+                        <label for="edad">Edad:</label>
+                        <input type="number" id="edad" name="edad" min="1" max="100"><br><br>
+            
+                        <!-- Antonio Rodas Pérez: Rango -->
+                        <label for="nivel">Nivel:</label>
+                        <input type="range" id="nivel" name="nivel" min="1" max="10"><br><br>
+            
+                        <!-- Antonio Rodas Pérez: Color -->
+                        <label for="color">Color favorito:</label>
+                        <input type="color" id="color" name="color"><br><br>
+            
+                        <!-- Antonio Rodas Pérez: Oculto -->
+                        <input type="hidden" name="oculto" value="secreto">
                     </fieldset>
-                    <br><br>
-
-                    <!-- Antonio Rodas Pérez: Selector de rango -->
-                    <label for="rango">Selecciona un rango:</label>
-                    <input type="range" id="rango" name="rango" min="0" max="10">
-                    <br><br>
-
-                    <!-- Antonio Rodas Pérez: Botón de reinicio -->
-                    <button type="reset">Reiniciar formulario</button>
-                    <br><br>
-
-                    <!-- Antonio Rodas Pérez: Campo de búsqueda -->
-                    <label for="busqueda">Buscar:</label>
-                    <input type="search" id="busqueda" name="busqueda">
-                    <br><br>
-
-                    <!-- Antonio Rodas Pérez: Campo de teléfono -->
-                    <label for="telefono">Número de teléfono:</label>
-                    <input type="tel" id="telefono" name="telefono">
-                    <br><br>
-
-                    <!-- Antonio Rodas Pérez: Campo de tiempo -->
-                    <label for="hora">Hora de inicio:</label>
-                    <input type="time" id="hora" name="hora">
-                    <br><br>
-
-                    <!-- Antonio Rodas Pérez: Campo de URL -->
-                    <label for="sitio">Sitio web:</label>
-                    <input type="url" id="sitio" name="sitio">
-                    <br><br>
-
-                    <!-- Antonio Rodas Pérez: Campo de semana -->
-                    <label for="semana">Selecciona una semana:</label>
-                    <input type="week" id="semana" name="semana">
-                    <br><br>
-
-                    <!-- Antonio Rodas Pérez: Botón de envío -->
+            
+                    <!-- Antonio Rodas Pérez: Opciones -->
+                    <fieldset>
+                        <legend>Opciones</legend>
+            
+                        <!-- Antonio Rodas Pérez: Checkbox -->
+                        <label><input type="checkbox" name="suscripcion" value="newsletter"> Suscribirme al boletín</label><br>
+            
+                        <!-- Antonio Rodas Pérez: Radio -->
+                        <label><input type="radio" name="genero" value="masculino"> Masculino</label>
+                        <label><input type="radio" name="genero" value="femenino"> Femenino</label><br><br>
+            
+                        <!-- Antonio Rodas Pérez: Select y option -->
+                        <label for="pais">País:</label>
+                        <select id="pais" name="pais">
+                            <optgroup label="América">
+                                <option value="mx">México</option>
+                                <option value="ar">Argentina</option>
+                            </optgroup>
+                            <optgroup label="Europa">
+                                <option value="es">España</option>
+                                <option value="fr">Francia</option>
+                            </optgroup>
+                        </select><br><br>
+            
+                        <!-- Antonio Rodas Pérez: Datalist -->
+                        <label for="ciudad">Ciudad de España favorita:</label>
+                        <input list="ciudades" id="ciudad" name="ciudad">
+                        <datalist id="ciudades">
+                            <option value="Sevilla">
+                            <option value="Madrid">
+                            <option value="Barcelona">
+                        </datalist>
+                    </fieldset>
+            
+                    <!-- Antonio Rodas Pérez: Otros elementos -->
+                    <fieldset>
+                        <legend>Más elementos</legend>
+            
+                        <!-- Antonio Rodas Pérez: File -->
+                        <label for="archivo">Subir archivo:</label>
+                        <input type="file" id="archivo" name="archivo"><br><br>
+            
+                        <!-- Antonio Rodas Pérez: Imagen -->
+                        <label for="imagen">Enviar imagen:</label>
+                        <input type="image" src="enviar.png" alt="Enviar"><br><br>
+            
+                        <!-- Antonio Rodas Pérez: Textarea -->
+                        <label for="comentarios">Comentarios:</label>
+                        <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+            
+                        <!-- Antonio Rodas Pérez: Meter -->
+                        <label>Progreso:</label>
+                        <meter value="3.3" min="0" max="10"></meter><br><br>
+            
+                        <!-- Antonio Rodas Pérez: Progress -->
+                        <label>Carga de energia:</label>
+                        <progress value="69" max="100"></progress>
+                    </fieldset>
+            
+                    <!-- Antonio Rodas Pérez: Botones -->
+                    <button type="button">Botón que no hace nada</button>
                     <button type="submit">Enviar</button>
+                    <button type="reset">Reiniciar</button>
                 </form>
+            </div>
+            <div id="cap4">
+                <section>
+                    <h2>Elemento &lt;audio&gt;</h2>
+                    <audio controls>
+                        <source src="Aqui va la ruta del audio" type="audio/mpeg">
+                        Tu navegador no soporta el elemento <code>audio</code>.
+                    </audio>
+                </section>
+
+                <section>
+                    <h2>Elemento &lt;video&gt; con &lt;track&gt;</h2>
+                    <video controls width="480">
+                        <source src="Aqui va la ruta del video" type="video/mp4">
+                        <track src="Aqui va la ruta del subtitulo" kind="subtitles" srclang="es" label="Español">
+                        Tu navegador no soporta el elemento <code>video</code>.
+                    </video>
+                </section>
+
+                <section>
+                    <h2>Elemento &lt;img&gt; con &lt;map&gt; y &lt;area&gt;</h2>
+                    <p>Haz clic en las áreas interactivas de la imagen:</p>
+                    <img src="https://www.orangesmile.com/common/img_country_maps_provinces/spain-map-provinces-1.jpg" usemap="#mapa" alt="Ejemplo de mapa de imagen" width="15%" height="15%">
+                    <map name="mapa">
+                        <area shape="rect" coords="34,44,270,350" href="https://aulavirtual.sopenasevilla.es/login/index.php" alt="Área 1">
+                        <!-- Antonio Rodas Pérez: Segundo parte del mapa no funcional hasta que ajuste la cordenada a la imagen. -->
+                        <!-- <area shape="circle" coords="400,200,50" href="https://www.example.com" alt="Área 2"> -->
+                    </map>
+                </section>
+
+                <section>
+                    <h2>Elemento &lt;svg&gt;</h2>
+                    <p>Gráfico vectorial incrustado:</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="150" height="100" viewBox="0 0 4 3">
+                        <rect width="4" height="1" y="0" fill="#00ab39"></rect>
+                        <rect width="4" height="1" y="1" fill="#1fffff"></rect>
+                        <rect width="4" height="1" y="2" fill="#000000"></rect>
+                    </svg>
+                </section>
+
+                <section>
+                    <h2>Elemento &lt;canvas&gt;</h2>
+                    <p>Dibujo en un lienzo:</p>
+                    <canvas id="micanvascurioso" width="300" height="150"></canvas>
+                </section>
             </div>
         </section>
     </main>
@@ -480,5 +540,4 @@
     <!-- Antonio Rodas Pérez: Script simple de javascript usado como ejemplo de ejemplo -->
     <script>console.log('Hola, mundo!');</script>
 </body>
-
 </html>
