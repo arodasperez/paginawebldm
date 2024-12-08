@@ -1,0 +1,174 @@
+/* Antonio Rodas Pérez: Estilos generales */
+html {
+    box-sizing: border-box; /* Antonio Rodas Pérez: Esto hace que los bordes y el relleno cuenten en el ancho total, no sé bien por qué, pero lo pone el tutorial */
+    scroll-behavior: smooth; /* Antonio Rodas Pérez: Hace que al hacer scroll se mueva suave, así se ve más cool */
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Antonio Rodas Pérez: creo que es el tipico set de letras que se ve bien */
+    line-height: 1.6; /* Antonio Rodas Pérez: Para que el texto no esté tan pegado y se lea mejor de cara al usuario final */
+    margin: 0; /* Antonio Rodas Pérez: Quita el margen por defecto, así queda más limpio */
+    padding: 0; /* Antonio Rodas Pérez: Quita el relleno por defecto, menos lío */
+    background-color: #fdfdfd; /* Antonio Rodas Pérez: Color de fondo casi blanco, el del video dijo que queda bien */
+    color: #333; /* Antonio Rodas Pérez: Color gris oscuro para el texto, se ve mejor que negro puro */
+}
+
+/* Antonio Rodas Pérez: Encabezado */
+section, article, aside, nav, figure, main, footer, header, address {
+    display: block; /* Antonio Rodas Pérez: Ponerlos en bloque, eso decían las buenas prácticas */
+    margin-bottom: 2em; /* Antonio Rodas Pérez: Dejar espacio abajo para que no se vea todo apretado */
+}
+
+/* Antonio Rodas Pérez: Capítulos */
+#cap1, #cap2, #cap3, #cap4 {
+    padding: 1em; /* Antonio Rodas Pérez: Un poquitín de espacio dentro */
+    border: 1px solid #eee; /* Antonio Rodas Pérez: Borde clarito, el del video lo usó así que yo también */
+    border-radius: 4px; /* Antonio Rodas Pérez: Esquinas redondeadas, supongo que queda "moderno" */
+    margin-bottom: 2em; /* Antonio Rodas Pérez: Un hueco abajo, pa que no se peguen los capítulos */
+}
+
+/* Antonio Rodas Pérez: Títulos */
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 1.5em; /* Antonio Rodas Pérez: Un espacio arriba del título */
+    margin-bottom: 0.5em; /* Antonio Rodas Pérez: Un poco menos abajo, por cuestiones de estilo */
+    font-weight: bold; /* Antonio Rodas Pérez: Negrita porque son títulos, obviamente */
+    line-height: 1.2; /* Antonio Rodas Pérez: Altura de línea chula, no sé, lo dijo el video */
+}
+
+code, pre, kbd, samp {
+    font-family: Consolas, Monaco, Courier, monospace; /* Antonio Rodas Pérez: Fuente tipo código, así se ve hacker */
+    background: #f7f7f7; /* Antonio Rodas Pérez: Fondito gris para que resalte */
+    padding: 0.2em 0.4em; /* Antonio Rodas Pérez: Un espacio chiquito pa que no quede pegado al borde */
+    border-radius: 3px; /* Antonio Rodas Pérez: Redondeado porque hoy todo es redondeado */
+}
+
+/* Antonio Rodas Pérez: Listas */
+ul, ol {
+    margin: 1em 0; /* Antonio Rodas Pérez: Un espacio arriba y abajo */
+    padding-left: 2em; /* Antonio Rodas Pérez: Muevelas a la derecha pa que se vea la viñeta */
+}
+
+li {
+    margin: 0.5em 0; /* Antonio Rodas Pérez: Espacio entre elementos de la lista, pa que respiren */
+}
+
+/* Antonio Rodas Pérez: Figuras */
+figure {
+    margin: 2em 0; /* Antonio Rodas Pérez: Separación arriba y abajo, pa que se luzca la imagen */
+    text-align: center; /* Antonio Rodas Pérez: Centrado, porque sí */
+}
+
+figcaption {
+    font-size: 0.9em; /* Antonio Rodas Pérez: Letra un poco más pequeña, en plan subtítulo */
+    color: #555; /* Antonio Rodas Pérez: Un gris medio, pa que no llame tanto la atención */
+    margin-top: 0.5em; /* Antonio Rodas Pérez: Un espacio arriba de la leyenda, pa no pegarla a la imagen */
+}
+
+/* Antonio Rodas Pérez: Tablas */
+table {
+    width: 100%; /* Antonio Rodas Pérez: Que ocupe todo el ancho */
+    border-collapse: collapse; /* Antonio Rodas Pérez: Sin espacios entre celdas, se ve más ordenado */
+    margin: 2em 0; /* Antonio Rodas Pérez: Espacio arriba y abajo, pa separarla del texto */
+}
+
+caption {
+    font-weight: bold; /* Antonio Rodas Pérez: Título de la tabla en negrita, obvio */
+    margin-bottom: 1em; /* Antonio Rodas Pérez: Un espacio debajo del título pa no pegarlo a la tabla */
+}
+
+th, td {
+    border: 1px solid #ccc; /* Antonio Rodas Pérez: Líneas grises en las celdas, pa ver las tablas */
+    padding: 0.5em; /* Antonio Rodas Pérez: Un poquito de espacio dentro de las celdas */
+}
+
+th {
+    background: #f9f9f9; /* Antonio Rodas Pérez: Un fondo un pelín más clarito */
+    font-weight: bold; /* Antonio Rodas Pérez: Cabezera en negrita pa destacar */
+}
+
+/* Antonio Rodas Pérez: Formularios */
+form {
+    margin: 2em 0; /* Antonio Rodas Pérez: Espacio arriba y abajo, para que el form no esté pegado */
+}
+
+fieldset {
+    border: 1px solid #ccc; /* Antonio Rodas Pérez: Un marco gris, típico */
+    padding: 1em; /* Antonio Rodas Pérez: Espacio dentro para que no quede todo apretado */
+    margin-bottom: 1em; /* Antonio Rodas Pérez: Un hueco abajo para separar fieldsets */
+    border-radius: 4px; /* Antonio Rodas Pérez: Bordes redondeados, moda actual */
+}
+
+legend {
+    font-weight: bold; /* Antonio Rodas Pérez: Destacar la leyenda del fieldset, no sé, suena lógico */
+    padding: 0 0.5em; /* Antonio Rodas Pérez: Un poco de espacio a los lados, porque quedaba feo pegado */
+}
+
+label {
+    display: inline-block; /* Antonio Rodas Pérez: Así puedo controlar el ancho */
+    margin-bottom: 0.5em; /* Antonio Rodas Pérez: Dejar un espacio entre etiquetas, para no amontonar */
+    width: 150px; /* Antonio Rodas Pérez: Así se alinean las etiquetas, eso dijo el video */
+    font-weight: bold; /* Antonio Rodas Pérez: Etiquetas en negrita, pa ver más fácil */
+}
+
+textarea {
+    width: 200px; /* Antonio Rodas Pérez: Ancho decente */
+    padding: 0.3em; /* Antonio Rodas Pérez: Un poco de relleno, se ve mejor al escribir */
+    border: 1px solid #ccc; /* Antonio Rodas Pérez: Borde gris estándar */
+    border-radius: 4px; /* Antonio Rodas Pérez: Bordes redondeados, again */
+    margin-bottom: 1em; /* Antonio Rodas Pérez: Dejar espacio abajo, si no se ve muy junto */
+    font-size: 1em; /* Antonio Rodas Pérez: Tamaño de letra normalito */
+}
+
+/* Antonio Rodas Pérez: Enlaces */
+a {
+    color: #0066cc; /* Antonio Rodas Pérez: Azulito, típico de un enlace */
+    text-decoration: none; /* Antonio Rodas Pérez: Sin subrayado, más minimalista */
+}
+
+/* Antonio Rodas Pérez: Navegación */
+nav {
+    background: #eee; /* Antonio Rodas Pérez: Fondito gris clarito */
+    padding: 1em; /* Antonio Rodas Pérez: Un espacio interno, sin más */
+    border-radius: 4px; /* Antonio Rodas Pérez: Bordes redondeados, la moda manda */
+}
+
+nav a {
+    margin: 0 0.5em; /* Antonio Rodas Pérez: Un poco de espacio entre enlaces, pa que no estén juntos */
+}
+
+/* Antonio Rodas Pérez: Contenido Multimedia: David Visbal */
+img {
+    max-width: 100%; /* Antonio Rodas Pérez: Que la imagen no se salga del contenedor */
+    height: auto; /* Antonio Rodas Pérez: Altura proporcional */
+    display: block; /* Antonio Rodas Pérez: Así no deja espacios raros debajo */
+    margin: 1em 0; /* Antonio Rodas Pérez: Un poco de espacio arriba y abajo */
+}
+
+audio, video {
+    max-width: 100%; /* Antonio Rodas Pérez: Igual que la imagen, que se adapten */
+    display: block; /* Antonio Rodas Pérez: Así se comportan bien en el flujo */
+    margin: 1em 0; /* Antonio Rodas Pérez: Un espacio, igual que las imágenes */
+}
+
+canvas {
+    border: 1px solid #ccc; /* Antonio Rodas Pérez: Un marco simple, el video decía así */
+    display: block; /* Antonio Rodas Pérez: Igual que imágenes y videos */
+    margin: 1em 0; /* Antonio Rodas Pérez: Espacio pa que no quede todo junto */
+}
+
+/* Antonio Rodas Pérez: Footer */
+#footer {
+    background: #222; /* Antonio Rodas Pérez: Un fondo oscuro para el final */
+    color: #fff; /* Antonio Rodas Pérez: Texto blanco pa que se vea bien */
+    padding: 2em 1em; /* Antonio Rodas Pérez: Espacio grande pa el pie, se ve más serio */
+    text-align: center; /* Antonio Rodas Pérez: Centrado, como todo en esta vida */
+}
+
+/* Antonio Rodas Pérez: Firma artística */
+#firmaartistica {
+    color: #333; /* Antonio Rodas Pérez: Gris oscuro, no tan agresivo */
+    margin: 2em 0; /* Antonio Rodas Pérez: Espacio grande para destacar la firma */
+    font-family: monospace; /* Antonio Rodas Pérez: Letra tipo máquina, se ve "retro" */
+    line-height: 1.1; /* Antonio Rodas Pérez: Un poquito más de espacio entre líneas */
+    font-size: 0.9em; /* Antonio Rodas Pérez: Un pelín más pequeña que el texto normal */
+}
